@@ -1,1 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>MeetSoup</title>
+<meta charset="utf-8">
+<meta name="viewport" contents="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
 
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color:  	#fee6d5;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: #4c4b3f;
+}
+
+/* Container for flexboxes */
+section {
+  display: -webkit-flex;
+  display: flex;
+}
+
+/* Style the navigation menu */
+nav {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  background: #ccc;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* Style the content */
+article {
+  -webkit-flex: 3;
+  -ms-flex: 3;
+  flex: 3;
+  background-color: #FEFAD5;
+  padding: 10px;
+}
+
+/* Style the footer */
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
+@media (max-width: 600px) {
+  section {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+  }
+}
+</style>
+</head>
+<body>
+
+<header>
+    <h2>MeetSoup</h2>
+</header>
+
+<section>
+
+  <article>
+    <h2>ZERJ Project</h2>
+    <p>Our group name is ZERJ. We are creating an app called MeetSoup. the group members are: Jack Henker, Robert Bell, Zak Toews, Elan Jonas-McRae.</p>
+  </article>
+
+</section>
+<section>
+
+  <article>
+    <h2>Project Proposal: MeetSoup</h2>
+    <h1>Problem</h1>
+    <p>Within our society there exists an emerging issue with regard to efficient food usage [1]. There also appears to be two easily distinguishable sides to this problem that we intent to address within our project. </p>
+    <p> On one hand, we know that many people throw away food that is still acceptable to be consumed by humans. They may do this for the following reasons:</p>
+    <ol>
+      <li>The person is leaving their normal premises for an extended period and cannot bring the food with them.</li>
+      <li>The food is nearing the expiration date, and the person does not envision utilizing the food within that time.</li>
+      <li>The food may be of substandard quality for the original consumer such as a bruised fruit or fatty meat.</li>
+    </ol>
+    <p>On the other hand, there are also many people who could benefit from easy access to free food. Some examples include:</p>
+    <ol>
+      <li>Many households already struggle to afford sufficient amounts of food.</li>
+      <li>The person does not need the food item in bulk and prefers a smaller quantity.</li>
+      <li>Some people are thrifty and simply wish to save money.</li>
+    </ol>
+    <p>A feasible way to connect these two types of people and to redirect otherwise wasted food to the people who need it does not currently exist.</p>
+    <h1>Motivation</h1>
+
+  </article>
+
+</section>
