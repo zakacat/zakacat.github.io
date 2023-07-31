@@ -248,8 +248,263 @@ img{
     <p>The user then decided to add filters to their search by clicking the funnel icon above the map. A screen with drop down menus for the category, subcategory, item type and max distance were displayed. The user selects choices from the drop down menus, and clicks the “set” button to apply the filter.</p>
     <p>Now that the search filters have been applied, the user is brought back to the “Find Food” screen. This search yielded no results, and the user is offered a hint. This hint is a prompt to set alerts for what the user has just searched for.</p>
     <p>The user is taken to the alert creation screen with the fields autofilled. The user reviews this, and once again clicks the “set” button. The platform then displays the alerts menu, and the newly added alert is visible. Note the green icon next to the alert. This allows for users to toggle alerts, opposed to only being able to create or delete them.</p>
-    <iframe width="560" height="315" src="https://youtu.be/DJaCro8_6-0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="image4"></iframe>
-    <h1>Heuristic Evaluation</h1>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/DJaCro8_6-0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="image4"></iframe>
+    <h2>Heuristic Evaluation</h2>
+    <h1>1: Visibility of System Status</h1>
+    <p>Our team identified the following visibility of system status issues within the prototype:</p>
+    <ul>
+      <li>The interface does not communicate clearly to users where they are in relation to other features.</li>
+      <li>The setting of notifications is not clear in all cases.</li>
+    </ul>
+    <p>The prototype currently informs the user where they are in the form of a title. This provides some insight to the user but fails to show the user exactly where they are in the interface in relation to other features. This issue persists throughout the entire application but the severity remains low. As such our team believes this constitutes a minor usability problem.</p>
+    <p>The interface provides no feedback to the user upon the clicking of the ‘set’ button. If a notification fails to be set due to an error, the user will not be informed of this. If the user previously set a large amount of notifications, they must scroll through and check to see if the new notification occurs in the list of notifications.</p>
+    <h1>2: Match Between System and The Real World</h1>
+    <p>There is a discrepancy between the system and the real world as seen in the mode setting on the Find Food menu where both views are available to the user. The modes are List View and Map View, and both provide a useful interface to the user; however, it is not clear from the buttons themselves which mode the user is in currently. It could be considered collapsing the two modes into one and displaying both views simultaneously, or deciding on one of the two modes. If one of the views were to be chosen, then the Map View should be preferred due to its visual aspects.</p>
+    <p>Because there is no functionality impacted, but only a minor potential for confusion, we rated this as a minor usability problem.</p>
+    <h1>3: User Control and Freedom</h1>
+    <p>The following problems exist in the interface that limit user control and freedom:</p>
+    <ul>
+      <li>No option exists for a user to return to the home screen.</li>
+      <li>The button for a user to return to the previous screen appears at the bottom of the application.</li>
+    </ul>
+    <p>No features currently exist that allow users who experienced a slip or mistake to return to the home screen immediately. This persistent issue constitutes a major usability problem and must be addressed.</p>
+    <p>If a user wishes to return to the previous step at any point, they must find the back button located on the bottom left. If the current page involves large amounts of data and the display is sufficiently large, this button may be hidden until the user scrolls to the bottom. This is a minor usability problem and need not be addressed immediately. A more complete navbar may eliminate both these issues with minimal cost.</p>
+    <h1>4: Consistency and Standards</h1>
+    <p>Our team identified the following minor usability problems involving consistency and standard:</p>
+    <ul>
+      <li>The functionality of the filter option is unclear.</li>
+      <li>The set button does not follow industry conventions for searching for food. </li>
+    </ul>
+    <p>The filter icon functions as a search feature within the application. In this interface, the user is intended to search for food. Therefore the possibility exists that certain users will not know how to interact with this feature. While frequently occurring, our team believes that users should be able to ascertain how to use this with trial and error and as such it is not a high priority to fix.</p>
+    <p>The usage of a set button for searching for food is unclear. This button is first used for searching for food nearby and then later used for setting notifications. These vastly different uses may confuse some users. This problem occurs only once and does not result in a severe impact to the interface. Our team believes this problem need not be addressed immediately. </p>
+    <h1>5: Error Prevention</h1>
+    <p>The prototype lacks proper error prevention measures in the search functionality of the interface. Users who press the ‘set’ button to search for food may encounter undefined behaviour if they fail to input all fields. This issue occurs only once in the interface but may severely impact the user experience. This constitutes a usability catastrophe and must be addressed immediately. </p>
+    <h1>6: Recognition Rather than Recall</h1>
+    <p>When the user was prompted to use the “create alert” feature after a search yielded no results, the properties of the search were copied over automatically onto the alert screen. This lets the user quickly make an alert without entering information twice.</p>
+    <h1>7: Flexibility and Efficiency of Use</h1>
+    <p>The notification setting feature lacks customizability for users with distinct preferences. Certain users may desire notifications containing banners and sound while others may prefer no sound for example. Some users may wish for notifications to only occur during certain hours of the day to avoid interruptions. This primarily hinders experienced and highly specific users and constitutes a minor usability problem. </p>
+    <h1>8: Aesthetic and Minimalist Design</h1>
+    <p>Our team identified the following issues within the application pertaining to aesthetics:</p>
+    <ul>
+      <li>The setting of notification features contains redundant information. </li>
+      <li>The design of the find food feature may be overwhelming when a large number of food types exist.</li>
+    </ul>
+    <p>When a user clicks the button labelled ‘yes’ and chooses to set a notification they are then shown the same information as the previous page. This information is redundant as the user already knows what food they wish to receive notifications for. This issue occurs once and results in no major usability issues for the user. </p>
+    <p>Users searching for food may encounter an overwhelmingly large number of items to scroll through before finding the item they desire. Consider a user who searches for ‘zucchini’ but must first scroll through all types of products alphabetically. Our team considers this a severe issue due to its’ potentially severe impact on interface usability. </p>
+    <h1>9: Helps Users Recognize, Diagnose and Recover from Errors</h1>
+    <p>The “back” button allowed the user to go back, but this was not demonstrated in the video. No other hints were displayed as the user operated the interface without any snags. Future thought would need to be implemented for users using the system incorrectly, such as adding error messages or other hints when menu navigation is attempted without the prerequisite information. </p>
+    <h1>10: Help and documentation</h1>
+    <p>The video prototype did not involve any tutorial, so it was assumed that users would intuitively figure out the UI, or the user was already familiar with the app. The user was offered a hint when a search yielding no results offered the user to utilise the alerts feature. A tutorial should be offered.</p>
+    <h2>Medium Fidelity Prototype</h2>
+    <h2>Evaluation Plan</h2>
+    <h1>User Evaluation Goals</h1>
+    <p>The user evaluation should provide insight into the following areas:</p>
+    <ol>
+      <li>Does the interface design allow users to easily complete the task of posting a food item?</li>
+      <li>Is the interface easy to navigate and control at all times?</li>
+      <li>Does the interface provide enough resources to assist users should they become stuck or unsure of how to proceed?</li>
+      <li>Did the interface produce errors, and did the design of the interface make it possible for users to recover from these errors?</li>
+    </ol>
+    <p>The interface must possess a high level of discoverability. The interface should allow users to to successfully and easily interact with all features and complete the provided task. In the previous prototype iteration, major usability issues existed concerning user control and freedom as well as error handling. Our team must determine if the design of the interface makes it easy for users to navigate freely around the application without any options being hidden or lacking. Our team must also determine if the interface provides enough help resources for users that become stuck while completing the task. The usability study should provide insight into how error prone the application is and whether or not these errors are easy to recover from. Finally, we hope to learn if users believed the interface struck a balance between being flexible and efficient to use while still maintaining a clean and minimalist design. Our team hopes that gathering this information will allow us to improve the interface design to better match the requirements of the user.</p>
+    <h1>User Research</h1>
+    <p>Our team plans to conduct the following research methods:</p>
+    <ol>
+      <li>A thorough usability test</li>
+      <li>A short semi-structured interview</li>
+    </ol>
+    <p>The usability test focuses on how real users interact with the interface. It is suitable for discovering issues within our interface. Our team believes the usability study will help us to better understand user preferences which will lead to enhanced user experiences moving forward. We believe that by observing users while they complete a task, we will be able to determine if some of the major heuristic issues identified in our low fidelity prototype were resolved. Additionally, we hope to learn if any heuristic issues exist that were not previously identified. </p>
+    <p>The interview is an opportunity for our team to gain valuable insight and delve deeper into specific areas. Follow up questions may help our team learn more about the user’ thought process and emotions regarding the interface. We believe the interview will prove valuable in finding some areas to work on that would improve the user’s overall experiences further.</p>
+    <p>Our team plans to recruit 6-9 participants from as diverse a background as possible. Specifically, all study participants should own a smartphone and regularly interact with interfaces. They also must all be at least 18 years of age. The user evaluation will be split into 2 iterations, and half the participants will participate in the first iteration. Based on the collected data, the interface will undergo improvements. After the interface undergoes modifications and improvements, research is conducted on the second group of participants. This iterative process will allow our team to achieve our goal of improving the interface rather than just documenting its issues.</p>
+    <h1>Administering an Evaluation Session</h1>
+    <p>The following steps will occur in the user evaluation:</p>
+    <ol>
+      <li>The participant is reminded about the specifics of the study and informed of what will take place</li>
+      <li>The researcher provides a clear task to the participant</li>
+      <li>The researcher asks the participant to think out loud and try to narrate their thoughts during the evaluation</li>
+      <li>The participant engages the interface and attempts to complete the task</li>
+      <li>The researcher administers the interview and after the completion of the interview, the participant is asked to complete the initial task again. </li>
+    </ol>
+    <p>The participant is reminded that they will engage in 20 minutes of usability testing and a 10 minute interview. The participant is told to find a way to use the interface to post a food item. The task is intentionally explained in a broad way in order to avoid giving away any information or introducing any biases into the procedure. By asking the participant to think out loud, the researcher gains the ability to understand why the participant is engaging the interface in the manner they are. The participant begins attempting to complete the task and the researcher only provides assistance should the participant remain stuck for more than 2 minutes. The researcher records everything the participant says and does throughout the procedure. By having the participant return to the task a second time after the interview, the researcher may learn valuable information regarding recognition and recall. </p>
+    <p>The interview involves the following questions administered using an open ended approach:</p>
+    <ol>
+      <li>Rate your experience using the photo uploader feature between 1 and 10.</li>
+      <li>Rate your experience using the date and time picker feature between 1 and 10.</li>
+      <li>Rate your experience using the location selection feature between 1 and 10.</li>
+      <li>Describe which parts of the task felt easy and which parts felt more challenging.</li>
+      <li>For any challenging parts, what do you believe caused them to be more challenging?</li>
+      <li>Did the interface provide enough resources to figure out how to navigate the challenging sections?</li>
+      <li>Did you find the interface easy to use in general?</li>
+      <li>What is one thing you liked about the interface design and why?</li>
+      <li>What is one thing you disliked about the interface design and why?</li>
+      <li>What would you change about the part that you disliked?</li>
+    </ol>
+    <p>The interview is expected to take 10 minutes and the researcher should ask follow up questions whenever necessary.</p>
+    <h1>Anticipated Problems</h1>
+    <p>Our team anticipates that the following problems could occur while conducting the user evaluation: </p>
+    <ol>
+      <li>Bugs exist within the Figma prototype when linking between pages and in smaller features such as drop-down menus.</li>
+      <li>The photo selection feature may be unclear to some users.</li>
+    </ol>
+    <p>We are hopeful that no bugs exist with the Figma software we are using to develop the prototype. Ideally the linking between pages will function correctly and the smaller features within each page such as drop down menus will also behave correctly. However, the possibility of these bugs existing remains.</p>
+    <p>Our team also anticipates possible problems with the photo selection feature of the post food feature in our prototype. The user may think that the prototype should open a camera or their photo gallery but this prototype won’t have the ability to access other apps on the device. This could lead to confusion and a reduction in usability satisfaction amongst the participants.</p>
+    <h1>Remedies for Expected Problems</h1>
+    <p>While our team is hopeful that no bugs exist within the Figma prototype, we plan to reduce the likelihood of bugs occurring further by conducting a pilot study.  By testing the prototype ourselves before conducting the study, we plan to eliminate as many bugs as possible. This also allows our team to understand how the linking between pages looks and whether any small issues exist regarding drop-down menus or other small features.  Finally, by putting as much time and resources as possible into implementing the prototype initially, we hope to minimize bugs and major usability issues that could result in catastrophe during the user testing. </p>
+    <p>The photo selection feature does not have access to the user’ camera or photo library as it is a medium fidelity prototype and not a finished application in production. Informing participants initially of the prototype’ limitations will help avoid this problem from occurring. The researcher informs the participant that they must select one of the provided photos rather than selecting their own.</p>
+    <h1>Data Types</h1>
+    <p>The data collected throughout the user evaluation and interview will consist mostly of qualitative data with a small amount of quantitative data mixed in. We anticipate learning about the participants’ thoughts and emotions regarding the interface. The user evaluation will provide insight into the participants’ experiences using the interface. If any major usability issues exist, these should present themselves in the usability study. </p>
+    <p>The interview provides additional qualitative data that should expose any heuristic issues missed through the user evaluation. Our team specifically formed the questions in order to understand if the heuristic issues identified during the low fidelity prototyping phase still exist, or if they have been resolved. The interview also provides a small amount of quantitative data regarding the levels of user satisfaction amongst different features of the application on a scale between 1 and 10 where 10 represents maximum satisfaction. This data allows for quick analysis as well as easy comparison to occur between various participants. The data from the user evaluation and interview should allow our team to determine which parts of the interface still need improvements or modifications.</p>
+    <h2>Description of Prototype</h2>
+    <h1>Prototype Details</h1>
+    <p>For our medium fidelity prototype, we decided to go with a vertical prototype. A vertical prototype is one that focuses on few features but with large functionality. With our prototype, we were able to display a full task of posting an item on MeetSoup from the homepage to post completion. To create the mock interface, which allows users to simulate making decisions and interacting with our GUI, we used Figma which is a web-based, collaborative interface design tool.</p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/_E9UZksIGgA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="image4"></iframe>
+    <h1>Improvements</h1>
+    <p>We were able to improve on many functionalities from our low-fidelity prototype. With regard to User Control, we added a home button to all screens, as well, we ensured that a back button was always visible to the user. With regard to Visibility, the relation between the screens is now visible. For the Aesthetic, we also further simplified the amount of options displayed on a screen at a given time.</p>
+    <p>Visually, we made a massive improvement by switching from a paper copy of a low-fidelity prototype to a digital copy of a GUI with many clean and standardized options for displaying components.</p>
+    <h1>Meeting Design Requirements</h1>
+    <p>We have many design requirements, and not all of them can be displayed with the one prototype task we chose of ‘Posting an Item’ (specifically, as a user and not as an establishment). However, we were still able to address several important requirements that we had set out for ourselves. Below we describe how we addressed two of our primary features, and one of our secondary features.</p>
+    <h1>Primary</h1>
+    <p>– Post Functionality – The entire task as seen in our vertical prototype covers the Post Functionality and several sub-features that it encompasses. As can be seen in our prototype, a user, in a relatively clear and concise manner, is able to post a food item available for public viewing and eventual pick-up.</p>
+    <p>– Scheduling – The scheduling feature can be seen as part of the Post Functionality. After selecting the food item and image to represent the item, the user can choose the dates on an intuitive calendar view. After the user selects the date/s, they can then choose the specific time they are available for pick-up for the date/s selected prior. The rolodex view provides constraint and therefore simplicity for the user as they do not need to consider formatting.</p>
+    <h1>Secondary</h1>
+    <p>– Confirmations – An example of confirmations is also present in the Post Functionality. After the user has viewed the summary of the post they would like to submit, they click Create Post. After, a page is displayed that says “Success!” and summarizes the post information.</p>
+    <h2>Evaluation Results and Discussion</h2>
+    <h2>The Study</h2>
+    <h1>Pilot Test</h1>
+    <p>For the pilot test, we invited a classmate to evaluate our application without providing specific instructions. Being familiar with our class and technology in general, they comprehensively navigated through the prototype and thoroughly tested all the functionality and options.</p>
+    <p>Our subject noted it was apparent to them that the task we planned to evaluate was “posting  food”, based on the prototype’s content.</p>
+    <p>They also noted the following points during the pilot test:</p>
+    <ul>
+      <li>Users might try to scroll the drop down menus (currently static)</li>
+      <li>The users need to know exactly what they are posting</li>
+      <li>The date picker only worked for June</li>
+      <li>Since the map feature is not implemented in the prototype, users must select “use my location” and assume the app has location access permissions.</li>
+    </ul>
+    <h1>Improvements Made After the Pilot Test</h1>
+    <p>We refined our task description to include the following specifications: </p>
+    <ul>
+      <li>The user must create a post</li>
+      <li>They are posting a very ripe bunch of bananas</li>
+      <li>The user must select the “use my location” option.</li>
+    </ul>
+    <h1>Participants</h1>
+    <p>Table 1. Participant information</p>
+    <table>
+      <tr>
+        <th>Participant Number</th>
+        <th>Age</th>
+        <th>Occupation</th>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>33</td>
+        <td>Biomedical Engineering Student</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>23</td>
+        <td>Software Engineering Student</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>29</td>
+        <td>Software Developer</td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>28</td>
+        <td>IT Technician </td>
+      </tr>
+      <tr>
+        <td>5</td>
+        <td>40</td>
+        <td>Medical Records Clerk</td>
+      </tr>
+      <tr>
+        <td>6</td>
+        <td>25</td>
+        <td>Chef</td>
+      </tr>
+    </table>
+    <img src="MeetSoupMedia/participant.jpg" alt="storyboard1" width= 50% align="middle">
+    <p>Figure 1. A participant using the prototype</p>
+    <h2>Data Collected & Results</h2>
+    <h1>Quantitative Data Analysis</h1>
+    <p>Our team retrieved quantitative data in the following areas:</p>
+    <ul>
+      <li>User experience ratings using the photo uploader feature, date and time picker, and location selection features.</li>
+      <li>Overall user satisfaction with the posting feature from start to finish.</li>
+      <li>Required time for users to complete the task.</li>
+      <li>Number of misclicks</li>
+    </ul>
+    <img src="MeetSoupMedia/quantGraph.png" alt="storyboard1" width= 50% align="middle">
+    <p>Figure 3. Quantitative data boxplot</p>
+    <p>The photo uploader box plot shown on the left of  Figure 3 displays the participants’ user experiences using the photo uploader feature. Our team obtained a median value of 6.5  with a max value of 10 and a minimum value of 2. This data indicates that participants were moderately satisfied with the photo uploader feature. A small number of participants were either extremely satisfied or extremely unsatisfied with the feature but these participants are not considered outliers.</p>
+    <p>The date and time picker feature received a median value of 5 with a maximum value of 9 and a minimum value of 2. While some participants were extremely dissatisfied with the feature, the data indicates that most values fell between 5 and 7. Most participants indicated a neutral to positive experience using this feature. </p>
+    <p>The location feature received a median value of 9.5 with a minimum value of 5 and a maximum value of 10. The vast majority of participants described a high degree of satisfaction with this feature while a few participants were neutral. This data indicates that participants described a higher level of user satisfaction with this feature compared to all other features that they interacted with. </p>
+    <p>Participants overall described a high level of satisfaction with the posting feature as a whole. This is confirmed by the overall posting feature box plot shown in figure 3 which indicates a median value of 7.5. An outlying user provided a satisfaction level of 10 but this value falls drastically higher than all the other satisfaction levels.</p>
+    <p>A median value of 120 seconds and a mean of 112 seconds for task completion time indicate that the vast majority of users took approximately 2 minutes to successfully complete the task. No outliers occurred as indicated by the close proximity that the median and mean fall to each other. Users completed the task relatively quickly and encountered few issues that resulted in major time delays. </p>
+    <p>Misclicks occurred infrequently throughout the user evaluation. A median value of 1 misclick indicates that users were easily able to determine where to click. One outlying user misclicked 4 times throughout the user evaluation. The mean therefore falls slightly higher at 1.5.</p>
+    <h1>Qualitative data analysis</h1>
+    <p>For the qualitative analysis, we gathered opinions from the participants of the evaluation. With these opinions, we refined the information into keyword/keyphrase codes that expressed the overall opinion of the statements. We then organized the codes into categories and identified trends in the data. </p>
+    <p>Users indicated a high level of satisfaction in the areas shown in Table 2.</p>
+    <p>Table 2. Codes corresponding to positive points in our prototype</p>
+    <table>
+      <tr>
+        <th>Likes</th>
+      </tr>
+      <tr>
+        <td>Clear Buttons</td>
+      </tr>
+      <tr>
+        <td>Page Navigation</td>
+      </tr>
+      <tr>
+        <td>Logical and Natural Flow</td>
+      </tr>
+      <tr>
+        <td>Minimalist Design</td>
+      </tr>
+      <tr>
+        <td>Clear Phrasing Throughout</td>
+      </tr>
+      <tr>
+        <td>Easy to Pick Food</td>
+      </tr>
+      <tr>
+        <td>Nice Drop-Down Menus</td>
+      </tr>
+      <tr>
+        <td>Liked the House Image for the Home Menu</td>
+      </tr>
+      <tr>
+        <td>User Friendly</td>
+      </tr>
+    </table>
+    <img src="MeetSoupMedia/pie-chart(1).png" alt="storyboard1" width= 50% align="middle">
+    <p>Figure 4. Pie chart showing the frequency of codes in Table 2</p>
+    <img src="MeetSoupMedia/Bad (2).png" alt="storyboard1" width= 50% align="middle">
+    <p>Figure 5. Venn diagram showing how the qualitative codes were organized into negative comments, restrictions due to prototype, and the intersection between the two of them.</p>
+    <h2>Discussion</h2>
+    <h1>Quantitative Conclusions</h1>
+    <p>Most participants expressed a high degree of satisfaction with our prototype but a few participants expected a fully functioning application rather than a prototype. These participants were disappointed due to the lack of information provided to them about what state the prototype is currently in. Though some participants gave poor user experience ratings on some of the features, all participants found the posting feature as a whole easy to use. Our team identified areas of improvement as shown in Figure 3. Some areas are caused by restrictions that cannot be resolved by a medium fidelity prototype. These areas will improve once the app moves towards the high fidelity stage.</p>
+    <h1>Qualitative Conclusions</h1>
+    <p>Several features of our prototype were well received as shown in Figure 4. Notably, the users liked the navigation, minimalist design, and overall ease of use.</p>
+    <p>The Venn diagram shown in Figure 5 depicts the intersection between prototyping restrictions and user complaints. The diagram assisted our team in determining the validity of the negative feedback. Although we knew that some comments were related to prototyping restrictions, we recorded all information in order to keep our study free of bias. For this step, we took the codes that we thought belonged in each group and placed them in the Venn diagram. </p>
+    <p>Our team made the following conclusions based on this code grouping:</p>
+    <ol>
+      <li>Strictly negative codes should be addressed in future iterations of the prototype. </li>
+      <li>Negative codes that correspond to prototyping restrictions should be assessed only if they conflict with our current methodology for designing our app. Otherwise these codes can be kept in mind while developing new iterations of the platform prototypes. </li>
+      <li>Neutral or positive codes related to prototyping restrictions can be ignored completely. </li>
+    </ol>
+    <p>We concluded that we should ensure that future iterations emphasize the usability of the date and time picker. Users reported they would like to have the ability to choose exact time slots, while also allowing them to select different times when multiple days are selected. </p>
+    <p>Our team must also address the  “unclear photo selection” which refers to how some users weren’t 100% certain of what the photo selection screen represented. We must add more information to the photo gallery and photo-selection screen. We also received a complaint about the color palette which is not restricted by the Figma software, but this opinion only came from one participant and goes against the opinions of the team. Our team will not consider recolouring the interface until later in the design process when we have feedback from more users.</p>
+    <h2>Study Limitations and Reflections</h2>
+    <p>Since the participants knew us personally, we expected some bias. The users may have stated that our features work adequately while actually thinking they could be improved, thus providing falsely high ratings. Having independent reviewers conduct the study would help to promote responses free of bias.</p>
+    <p>At the beginning of the user evaluation, this bias was an expected problem. As we carried out the user evaluations, the participants seemed fairly honest about how they viewed our application. However, there were some outlying numbers. We expected that, with the rating of the features, there may be outlying numbers which could skew the data. There was a participant who rated some features significantly lower than the rest of the participants, contrary to our assumptions.</p>
+    <p>Another limitation of our study is that only one linear task was available for the participant to carry out. We don’t know enough about how a user would feel about the entire application we designed because the users were only able to view one feature within the interface.</p>
+    <p>Some of the participants didn’t understand that the application they were asked to use was a medium-fidelity prototype of an application in development. Some participants were expecting an interface with a higher degree of functionality. This could have caused the ratings of the application to be worse than they might otherwise have been.</p>
+    <p>The demographics in our study were not particularly diverse. Most participants had technical backgrounds and were of a similar age range. Conducting the research with a larger and more diverse group of participants would have provided our team with feedback from more perspectives. This would’ve helped in ensuring inclusivity while also minimizing blind spots in the design.</p>
+
 
 
 
